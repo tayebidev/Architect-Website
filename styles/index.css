@@ -1,65 +1,77 @@
-*{
+* {
     font-family: 'Work Sans', sans-serif;
 }
+
 /* shared style */
-    .btn-primary{
-        background-color: #FF900E;
-        color: white;
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        letter-spacing: -1.2px;
-        border: 0;
-        cursor: pointer;
-    }
-    .text-description{
-    color: #727272;
-    font-size: 1rem ;
-    font-weight: 400;
-    }
-/* header style */
-header{
-    background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px ;
+.btn-primary {
+    background-color: #FF900E;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    border: 0;
+    cursor: pointer;
 }
-nav{
+
+.text-description,
+.card-title {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* header style */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.Architects{
-     color: #131313;
-     font-size: 2.8rem;
-     font-weight: 700;
+
+.Architects {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
 }
-nav li{
-   list-style: none;
-   margin-right: 30px; 
-   font-weight: 500;
-   font-size: 1rem;
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
-    color: #424242 ;
+    color: #424242;
     font-size: 18px;
     font-weight: 500;
 }
+
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
-    color:#131313 ;
-    font-size: 4rem ;
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
     font-weight: 700;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
@@ -67,73 +79,115 @@ nav li a{
 
 
 /* main styles */
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /* teams container section start */
-.team-container{
+.team-container {
     display: flex;
     align-items: center;
     margin-top: 85px;
     gap: 4.5rem;
 }
-.teams-image-container{
+
+.teams-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
-   padding-left: 100px; 
-   padding-right: 70px;
-   border: 01px solid tomato;
+
+.teams-content {
+    padding-left: 100px;
+    padding-right: 70px;
+    border: 01px solid tomato;
 }
-.teams-title{
+
+.teams-title {
     font-size: 2.8rem;
 }
-.quick-list{
+
+.quick-list {
     color: #727272;
     font-weight: 500;
 }
-.of-our{
+
+.of-our {
     color: #131313;
     font-weight: 700;
 }
-.teams-features{
+
+.teams-features {
     color: #FF900E;
     font-weight: 700;
 }
 
 /* some facts section */
-.some-facts{
-    color:#131313 ;
+.some-facts {
+    color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card-container .card-stats {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.facts-card-container .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2px;
 }
 
 /* media query */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav, .team-container{
+
+    nav,
+    .team-container {
         flex-direction: column;
     }
-    .teams-image-container{
+
+    .teams-image-container {
         grid-template-columns: 1fr;
     }
-    .teams-content{
+
+    .teams-content {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
+
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-        nav, .team-container{
+
+    nav,
+    .team-container {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 20px;
     }
 }
