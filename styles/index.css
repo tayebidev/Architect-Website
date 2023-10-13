@@ -162,8 +162,7 @@ main {
 .ten-years-badge h2{
     font-size: 4.06rem;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0px;
 }
 .ten-years-badge p{
     font-size: 1.5rem;
@@ -248,9 +247,10 @@ footer p{
     }
     nav,
     .team-container,
+    .features,
     .facts-card-container,
-    .sponsors-image-container,
-    .features {
+    .sponsors-image-container
+     {
         flex-direction: column;
     }
     .feature-img img{
@@ -283,7 +283,7 @@ footer p{
     nav,
     .features,
     .team-container,
-    .sponsors-image-container,
+    .sponsors-image-container
     {
         flex-direction: column;
     }
