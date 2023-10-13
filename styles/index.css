@@ -222,13 +222,30 @@ main {
     width: 165px;
 }
 
+/* footer section */
+footer{
+    width: 1440px;
+    margin: 50px auto;
+}
+footer p{
+    padding: 38px;
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    font-size: 20px;
+    font-weight: 400;
+    color:#424242 ;
+}
+
 /* media query */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
     }
-
+    footer{
+        width: 100%;
+    }
     nav,
     .team-container,
     .facts-card-container,
